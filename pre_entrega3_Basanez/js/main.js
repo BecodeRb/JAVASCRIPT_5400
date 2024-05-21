@@ -1,7 +1,7 @@
 
 let productos = [];
 
-fetch(".//productos.json")
+fetch("./js/productos.json")
     .then(response => response.json())
     .then(data => {
         productos = data;
@@ -10,11 +10,15 @@ fetch(".//productos.json")
 
 //lamamos con DOM (DOCUMENT OBJECT MODEL)
 const contenedorProductos = document.querySelector("#contenedor-productos");
-
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
 const tituloPrincipal = document.querySelector(".titulo-principal");
+let botonesAgregar = document.querySelectorAll(".producto-agregar");
+const numerito = document.querySelector("#numerito");
 
 
+botonesCategorias.forEach(boton => boton.addEventListener("click", () => {
+    aside.classList.remove("aside-visible");
+}))
 
 //funcion para llamar productos de array
 function cargarProductos(productosElegidos){
@@ -27,6 +31,7 @@ function cargarProductos(productosElegidos){
         const div = document.createElement("div")
 
         div.classList.add("producto");
+        //<div class="producto"> CONECTADO CON div.classList.add("producto"); EN FUNCION cargarProductos
         div.innerHTML = `
         <img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
         <div class="producto-detalles">
@@ -39,6 +44,8 @@ function cargarProductos(productosElegidos){
     contenedorProductos.append(div);
 
     })
+
+    actualizarBotonesAgregar();
 
 }
 
@@ -70,17 +77,64 @@ if (e.currentTarget.id != "todos") {
     })
 })
 
+function actualizarBotonesAgregar() {
+    botonesAgregar = document.querySelectorAll(".producto-agregar");
 
+    botonesAgregar.forEach(boton => {
+        boton.addEventListener("click", agregarAlCarrito);
+    });
+}
 
-/*
+let productosEnCarrito;
 
-<div class="producto"> CONECTADO CON div.classList.add("producto"); EN FUNCION cargarProductos
-<img class="producto-imagen" src="./img/pizza/01.jpg" alt="*>
-<div class="producto-detalles"›
-<h3 class="producto-titulo">PIZZA</h3>
-<p class="producto-precio"≥$100</p›
-<button class="producto-agregar"›Agregar</button>
-</div>
-</div>
+let productosEnCarritoLS = localStorage.getItem("productos-en-carrito");
 
-*/
+if (productosEnCarritoLS) {
+    productosEnCarrito = JSON.parse(productosEnCarritoLS);
+    actualizarNumerito();
+} else {
+    productosEnCarrito = [];
+}
+
+function agregarAlCarrito(e) {
+
+    Toastify({
+        text: "Producto agregado",
+        duration: 3000,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, #40BF16, #33821A)",
+          borderRadius: "2rem",
+          textTransform: "uppercase",
+          fontSize: ".75rem"
+        },
+        offset: {
+            x: '1.5rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+            y: '1.5rem' // vertical axis - can be a number or a string indicating unity. eg: '2em'
+          },
+        onClick: function(){} // Callback after click
+      }).showToast();
+
+    const idBoton = e.currentTarget.id;
+    const productoAgregado = productos.find(producto => producto.id === idBoton);
+
+    if(productosEnCarrito.some(producto => producto.id === idBoton)) {
+        const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
+        productosEnCarrito[index].cantidad++;
+    } else {
+        productoAgregado.cantidad = 1;
+        productosEnCarrito.push(productoAgregado);
+    }
+
+    actualizarNumerito();
+
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+}
+
+function actualizarNumerito() {
+    let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
+    numerito.innerText = nuevoNumerito;
+}

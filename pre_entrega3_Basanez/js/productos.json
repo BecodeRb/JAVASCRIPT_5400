@@ -1,10 +1,9 @@
-
- [
+[
 
     {
         "id": "Pizza Margarita",
         "titulo": "Margarita Clásica",
-        "imagen": ".//img/productos/pizza_margarita_clasica-01.jpg",
+        "imagen": "./img/pizza_margarita_clasica-01.jpg",
         "categoria": {
             "nombre": "Margarita",
             "id": "margarita"
@@ -14,7 +13,7 @@
     {
         "id": "Pizza Margarita",
         "titulo": "Margarita Pesto",
-        "imagen": ".//img/productos/pizza_margarita_clasica-01.jpg",
+        "imagen": "./img/pizza_margarita_clasica-01.jpg",
         "categoria": {
             "nombre": "Margarita",
             "id": "margarita"
@@ -24,7 +23,7 @@
     {
         "id": "Pizza Margarita",
         "titulo": "Margarita New York",
-        "imagen": ".//img/productos/pizza_margarita_clasica-01.jpg",
+        "imagen": "./img/pizza_margarita_clasica-01.jpg",
         "categoria": {
             "nombre": "Margarita",
             "id": "margarita"
@@ -34,7 +33,7 @@
     {
         "id": "Pizza Pepperoni",
         "titulo": "Peperoni Clásica",
-        "imagen": ".//img/productos/pizza_margarita_clasica-01.jpg",
+        "imagen": "./img/pizza_margarita_clasica-01.jpg",
         "categoria": {
             "nombre": "Pepperoni",
             "id": "pepperoni"
@@ -44,7 +43,7 @@
     {
         "id": "Pizza Pepperoni",
         "titulo": "Peperoni Chicago",
-        "imagen": ".//img/productos/pizza_margarita_clasica-01.jpg",
+        "imagen": "./img/pizza_margarita_clasica-01.jpg",
         "categoria": {
             "nombre": "Pepperoni",
             "id": "pepperoni"
@@ -54,7 +53,7 @@
     {
         "id": "Pizza Cuatro Quesos",
         "titulo": "Cuatro Quesos Clásica",
-        "imagen": ".//img/productos/pizza_margarita_clasica-01.jpg",
+        "imagen": "./img/pizza_margarita_clasica-01.jpg",
         "categoria": {
             "nombre": "Cuatro Quesos",
             "id": "cuatro-quesos"
@@ -64,7 +63,7 @@
     {
         "id": "Pizza Jamon",
         "titulo": "Jamon Clásica",
-        "imagen": ".//img/productos/pizza_margarita_clasica-01.jpg",
+        "imagen": "./img/pizza_margarita_clasica-01.jpg",
         "categoria": {
             "nombre": "Jamon",
             "id": "jamon"
