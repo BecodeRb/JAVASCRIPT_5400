@@ -1,0 +1,77 @@
+
+ [
+
+    {
+        "id": "Pizza Margarita",
+        "titulo": "Margarita Clásica",
+        "imagen": ".//img/productos/pizza_margarita_clasica-01.jpg",
+        "categoria": {
+            "nombre": "Margarita",
+            "id": "margarita"
+        },
+        "precio": 190
+    },
+    {
+        "id": "Pizza Margarita",
+        "titulo": "Margarita Pesto",
+        "imagen": ".//img/productos/pizza_margarita_clasica-01.jpg",
+        "categoria": {
+            "nombre": "Margarita",
+            "id": "margarita"
+        },
+        "precio": 210
+    },
+    {
+        "id": "Pizza Margarita",
+        "titulo": "Margarita New York",
+        "imagen": ".//img/productos/pizza_margarita_clasica-01.jpg",
+        "categoria": {
+            "nombre": "Margarita",
+            "id": "margarita"
+        },
+        "precio": 250
+    },
+    {
+        "id": "Pizza Pepperoni",
+        "titulo": "Peperoni Clásica",
+        "imagen": ".//img/productos/pizza_margarita_clasica-01.jpg",
+        "categoria": {
+            "nombre": "Pepperoni",
+            "id": "pepperoni"
+        },
+        "precio": 210
+    },
+    {
+        "id": "Pizza Pepperoni",
+        "titulo": "Peperoni Chicago",
+        "imagen": ".//img/productos/pizza_margarita_clasica-01.jpg",
+        "categoria": {
+            "nombre": "Pepperoni",
+            "id": "pepperoni"
+        },
+        "precio": 320
+    },
+    {
+        "id": "Pizza Cuatro Quesos",
+        "titulo": "Cuatro Quesos Clásica",
+        "imagen": ".//img/productos/pizza_margarita_clasica-01.jpg",
+        "categoria": {
+            "nombre": "Cuatro Quesos",
+            "id": "cuatro-quesos"
+        },
+        "precio": 250
+    },
+    {
+        "id": "Pizza Jamon",
+        "titulo": "Jamon Clásica",
+        "imagen": ".//img/productos/pizza_margarita_clasica-01.jpg",
+        "categoria": {
+            "nombre": "Jamon",
+            "id": "jamon"
+        },
+        "precio": 210
+    }
+
+
+    
+]
