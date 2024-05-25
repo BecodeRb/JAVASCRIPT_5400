@@ -20,6 +20,11 @@
 
  } 
 
+ .img-product{
+    width: 100%;
+    height: auto;
+ }
+
 
 main {
     background-color: var(--clr-white);
@@ -27,3 +32,27 @@ main {
     margin: 3rem;
     padding: 3rem
 }
+
+body {
+    background-color: var(--clr-main-light);
+
+}
+
+footer {
+    text-align: center;
+    font-size: 11px;
+    color: antiquewhite;
+}
+
+/* Carrito */
+
+.align-content-space-evenly {
+    align-content: space-evenly;
+}
+
+.btn-trash:hover{
+  color: crimson;
+}
+
+
+
