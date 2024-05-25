@@ -31,6 +31,7 @@ function validarAcceso() {
 }
 
 // Inventario de pizzas
+/*
 const inventarioPizza = {
     1: { producto: "Margarita Clásica", tipo: "Margarita", precio: 190 },
     2: { producto: "Margarita Pesto", tipo: "Margarita", precio: 210 },
@@ -42,7 +43,7 @@ const inventarioPizza = {
     8: { producto: "4 Quesos con Blue Cheese",tipo: "4 Quesos", precio: 220 },
     9: { producto: "Jamon Clásica",tipo: "Jamon", precio: 210},
     10: { producto: "Jamon Italiana",tipo: "Jamon", precio: 240},
-};
+*/
 
 let carrito = [];
 

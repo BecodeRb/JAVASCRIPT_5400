@@ -46,6 +46,14 @@ aside {
     justify-content: space-between;
 }
 
+main {
+    background-color: var(--clr-white);
+    margin: 1rem;
+    margin-left: 0;
+    border-radius: 2rem;
+    padding: 3rem;
+}
+
 .menu {
     display: flex;
     flex-direction: column;
