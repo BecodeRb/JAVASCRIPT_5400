@@ -40,6 +40,11 @@
     <main>
         <div class="container">
 
+            <a href="./index.html">
+                <button class="btn btn-main-color bi bi-arrow-left" type="button" id="button-addon1"> Seguir
+                    comprando</button>
+            </a>
+
             <h3>Carrito</h3>
 
             <div id="carrito">
@@ -145,9 +150,61 @@
 
 
             </div>
+            <div class="row mt-2">
+                <div class="col-12">
+                    <button type="button" class="btn btn-danger">Vaciar carrito</button>
+
+                </div>
+
+            </div>
+            <h4 class="mt-5">Informacion del huesped</h4>
+
+            <div class="card">
+                <div class="card-body">
+                    <form>
+                        <div class="row">
+
+                            <div class="col-lg-4">
+                                <div class="mb-3">
+                                    <label for="verticalnav-lastname-input">Nombre de reserva</label>
+                                    <input type="text" class="form-control" id="verticalnav-lastname-input"
+                                        placeholder="Enter your Last Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="mb-3">
+                                    <label for="verticalnav-lastname-input">Habitación</label>
+                                    <input type="number" class="form-control" id="verticalnav-lastname-input"
+                                        placeholder="Numero de habitacion">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="mb-3">
+                                    <label for="verticalnav-lastname-input">Método de pago</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option value="1">Tarjeta</option>
+                                        <option value="2">Efectivo</option>
+                                        <option value="3">Cargo a la habitación</option>
+                                      </select>
+                                </div>
+
+                            </div>
+                        </div>
 
 
 
+
+                    </form>
+                </div>
+
+            </div>
+
+            <div class=" mt-4 text-end">
+
+                <h2>$100.00 MXN</h2>
+                <button type="button" class="btn btn-success">Pagar</button>
+            </div>
 
         </div>
     </main>
