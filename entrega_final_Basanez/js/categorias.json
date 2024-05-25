@@ -1,0 +1,23 @@
+[
+
+    {
+        "id": 1,
+        "nombre": "Pizza Margarita"
+    },
+    {
+        "id": 2,
+        "nombre": "Pizza Pepperoni"
+    },
+    {
+        "id": 3,
+        "nombre": "Pizza 4 Quesos"
+    },
+    {
+        "id": 4,
+        "nombre": "Pizza Jamon"
+    },
+    {
+        "id": 5,
+        "nombre": "Bebida"
+    }
+]

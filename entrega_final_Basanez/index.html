@@ -9,6 +9,8 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="./main.css">
+
+  
 </head>
 
 <body>
@@ -59,24 +61,8 @@
 
       <div class="row pt-4">
         <div class="col-8">
-            <div class="row pt-2">
+            <div id="productos" class="row pt-2">
                 
-                <div class="col-4">
-                    <div class="card  mb-2">
-                      <img src="./img/productos/pizza_margarita_clasica-01.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Card title 2</p>
-                        <p class="card-text">$10.00 MXN</p>
-                        <div class="input-group">
-                          <button class="btn btn-outline-secondary btn-main-color" type="button" id="button-addon1">-</button>
-                          <input type="text" class="form-control text-center" min="0" value="0" disabled>
-                          <button class="btn btn-outline-secondary btn-main-color" type="button">+</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
             
             </div>
 
@@ -84,15 +70,12 @@
 
         </div>
         <div class="col-4">
-          <div class="list-group">
-            <button type="button" class="list-group-item list-group-item-action btn-main-color btn-main-active" aria-current="true">
-              Todos los productos
-            </button>
-            <button type="button" class="list-group-item list-group-item-action btn-main-color  ">Pizza Margarita</button>
-            <button type="button" class="list-group-item list-group-item-action btn-main-color  ">Pizza Pepperoni</button>
-            <button type="button" class="list-group-item list-group-item-action btn-main-color  ">Pizza 4 quesod</button>
-            <button type="button" class="list-group-item list-group-item-action btn-main-color " disabled>A disabled button
-              item</button>
+          <div id="categorias" class="list-group">
+
+            <button type="button" class="list-group-item list-group-item-action btn-main-color" onClick="obtenerPizzas()" >Todos los productos</button>
+
+            <!--AQUI VA JS-->
+
           </div>
         </div>
       </div>
@@ -100,17 +83,19 @@
     </div>
   </main>
 
+  <footer>
+    <p class="texto-footer">
+      2024 CLICK PIZZA BY BECO HOTEL BOUTIQUE
+    </p>
+  </footer>
 
 
 
 
+  <script src="./js/main.js"></script>
 
 </body>
 
-<footer>
-  <p class="texto-footer">
-    2024 CLICK PIZZA BY BECO HOTEL BOUTIQUE
-  </p>
-</footer>
+
 
 </html>

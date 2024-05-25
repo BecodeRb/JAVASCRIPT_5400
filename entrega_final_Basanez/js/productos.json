@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "producto": "Margarita Clásica",
+        "imagen": "./img/pizza_margarita_clasica-01.jpg",
+        "categoria": {
+            "id": 1,
+            "nombre": "Pizza Margarita"
+        },
+        "precio": 190
+    },
+    {
+        "id": 2,
+        "producto": "Margarita Pesto",
+        "imagen": "./img/pizza_margarita_clasica-01.jpg",
+        "categoria": {
+            "id": 1,
+            "nombre": "Pizza Margarita"
+        },
+        "precio": 190
+    },
+    {
+        "id": 3,
+        "producto": "Margarita New York",
+        "imagen": "./img/pizza_margarita_clasica-01.jpg",
+        "categoria": {
+            "id": 1,
+            "nombre": "Pizza Margarita"
+        },
+        "precio": 190
+    },
+    {
+        "id": 4,
+        "producto": "Peperoni Clásica",
+        "imagen": "./img/pizza_margarita_clasica-01.jpg",
+        "categoria": {
+            "id": 2,
+            "nombre": "Pizza Pepperoni"
+        },
+        "precio": 190
+    },
+    {
+        "id": 5,
+        "producto": "Peperoni con anchoas",
+        "imagen": "./img/pizza_margarita_clasica-01.jpg",
+        "categoria": {
+            "id": 2,
+            "nombre": "Pizza Pepperoni"
+        },
+        "precio": 190
+    }
+]
