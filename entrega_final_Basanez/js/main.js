@@ -103,7 +103,6 @@ const inventario_pizza = {
   7: { producto: "4 Quesos Clásica",tipo: "4 Quesos", precio: 200 },
   8: { producto: "4 Quesos con Blue Cheese",tipo: "4 Quesos", precio: 220 },
   9: { producto: "Jamon Clásica",tipo: "Jamon", precio: 210},
-  10: { producto: "Jamon Italiana",tipo: "Jamon", precio: 240},
 */
 
 //PRODUCTOS

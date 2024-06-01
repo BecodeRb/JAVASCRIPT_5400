@@ -69,8 +69,10 @@ const removerClase = (elemento, clase) => {
   elemento.classList.remove(clase);
 };
 
+//validacion de si es correcto nombre y habitacion autorizadas
+
 const validarElemento = (elemento, valor_correcto) => {
-  if (elemento.value == valor_correcto) {
+  if (elemento.value.toUpperCase() == valor_correcto) {
     removerClase(elemento, "is-invalid");
     agregarClase(elemento, "is-valid");
     return true;
