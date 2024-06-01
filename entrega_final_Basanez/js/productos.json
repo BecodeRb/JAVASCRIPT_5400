@@ -2,7 +2,7 @@
     {
         "id": 1,
         "producto": "Margarita Clásica",
-        "imagen": "./img/pizza_margarita_clasica-01.jpg",
+        "imagen": "./img/productos/pizza_margarita_clasica-01.jpg",
         "categoria": {
             "id": 1,
             "nombre": "Pizza Margarita"
@@ -12,7 +12,7 @@
     {
         "id": 2,
         "producto": "Margarita Pesto",
-        "imagen": "./img/pizza_margarita_clasica-01.jpg",
+        "imagen": "./img/productos/pizza_margarita_clasica-01.jpg",
         "categoria": {
             "id": 1,
             "nombre": "Pizza Margarita"
@@ -22,7 +22,7 @@
     {
         "id": 3,
         "producto": "Margarita New York",
-        "imagen": "./img/pizza_margarita_clasica-01.jpg",
+        "imagen": "./img/productos/pizza_margarita_clasica-01.jpg",
         "categoria": {
             "id": 1,
             "nombre": "Pizza Margarita"
@@ -32,7 +32,7 @@
     {
         "id": 4,
         "producto": "Peperoni Clásica",
-        "imagen": "./img/pizza_margarita_clasica-01.jpg",
+        "imagen": "./img/productos/pizza_margarita_clasica-01.jpg",
         "categoria": {
             "id": 2,
             "nombre": "Pizza Pepperoni"
@@ -42,7 +42,7 @@
     {
         "id": 5,
         "producto": "Peperoni con anchoas",
-        "imagen": "./img/pizza_margarita_clasica-01.jpg",
+        "imagen": "./img/productos/pizza_margarita_clasica-01.jpg",
         "categoria": {
             "id": 2,
             "nombre": "Pizza Pepperoni"

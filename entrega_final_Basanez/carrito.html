@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="./main.css">
 </head>
 
@@ -51,108 +52,11 @@
 
                 <!--PRODUCTOS DE CARRITOS -->
 
-                <div class="card mb-3">
-                    <div class="row g-0">
-                        <div class="col-md-1">
-                            <img src="./img/productos/pizza_margarita_clasica-01.jpg"
-                                class="img-fluid rounded-start img-product" alt="...">
-                        </div>
-                        <div class=" col-md-4 align-content-space-evenly">
-
-                            <div class="p-2 ">
-                                <p class="p-0 m-0">Titulo</p>
-                                <strong>Margarita clasica</strong>
-                            </div>
-
-
-                        </div>
-                        <div class="col-md-2 align-content-space-evenly text-center">
-                            <div class="p-2 ">
-                                <p class="p-0 m-0">Cantidad</p>
-                                <div class="input-group">
-                                    <button class="btn btn-outline-secondary btn-main-color" type="button"
-                                        id="button-addon1">-</button>
-                                    <input type="text" class="form-control text-center" min="0" value="0" disabled>
-                                    <button class="btn btn-outline-secondary btn-main-color" type="button">+</button>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-md-2 align-content-space-evenly">
-
-                            <div class="p-2 ">
-                                <p class="p-0 m-0">Precio</p>
-                                <strong>$20.00 MXN</strong>
-                            </div>
-                        </div>
-                        <div class="col-md-2 align-content-space-evenly">
-                            <div class="p-2 ">
-                                <p class="p-0 m-0">Subtotal</p>
-                                <strong>$20.00 MXN</strong>
-                            </div>
-                        </div>
-                        <div class="col-md-1 align-content-space-evenly text-center">
-                            <button class="btn-trash btn bi bi-trash-fill"></button>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-                <div class="card mb-3">
-                    <div class="row g-0">
-                        <div class="col-md-1">
-                            <img src="./img/productos/pizza_margarita_clasica-01.jpg"
-                                class="img-fluid rounded-start img-product" alt="...">
-                        </div>
-                        <div class=" col-md-4 align-content-space-evenly">
-
-                            <div class="p-2 ">
-                                <p class="p-0 m-0">Titulo</p>
-                                <strong>Margarita clasica</strong>
-                            </div>
-
-
-                        </div>
-                        <div class="col-md-2 align-content-space-evenly text-center">
-                            <div class="p-2 ">
-                                <p class="p-0 m-0">Cantidad</p>
-                                <div class="input-group">
-                                    <button class="btn btn-outline-secondary btn-main-color" type="button"
-                                        id="button-addon1">-</button>
-                                    <input type="text" class="form-control text-center" min="0" value="0" disabled>
-                                    <button class="btn btn-outline-secondary btn-main-color" type="button">+</button>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-md-2 align-content-space-evenly">
-
-                            <div class="p-2 ">
-                                <p class="p-0 m-0">Precio</p>
-                                <strong>$20.00 MXN</strong>
-                            </div>
-                        </div>
-                        <div class="col-md-2 align-content-space-evenly">
-                            <div class="p-2 ">
-                                <p class="p-0 m-0">Subtotal</p>
-                                <strong>$20.00 MXN</strong>
-                            </div>
-                        </div>
-                        <div class="col-md-1 align-content-space-evenly text-center">
-                            <button class="btn-trash btn bi bi-trash-fill"></button>
-                        </div>
-                    </div>
-                </div>
-
-
 
             </div>
             <div class="row mt-2">
                 <div class="col-12">
-                    <button type="button" class="btn btn-danger">Vaciar carrito</button>
+                    <button type="button" class="btn btn-danger" onclick="vaciarCarrito()">Vaciar carrito</button>
 
                 </div>
 
@@ -166,16 +70,29 @@
 
                             <div class="col-lg-4">
                                 <div class="mb-3">
-                                    <label for="verticalnav-lastname-input">Nombre de reserva</label>
-                                    <input type="text" class="form-control" id="verticalnav-lastname-input"
+                                    <label for="apellido">Nombre de reserva</label>
+                                    <input type="text" class="form-control " id="apellido"
                                         placeholder="Enter your Last Name">
+                                    <div class="valid-feedback">
+                                        Huésped encontrado
+                                    </div>
+                                    <div id="validationServer03Feedback" class="invalid-feedback">
+                                        No se encontro el huésped
+                                    </div>
+
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="mb-3">
-                                    <label for="verticalnav-lastname-input">Habitación</label>
-                                    <input type="number" class="form-control" id="verticalnav-lastname-input"
+                                    <label for="habitacion">Habitación</label>
+                                    <input type="number" class="form-control" id="habitacion"
                                         placeholder="Numero de habitacion">
+                                    <div class="valid-feedback">
+                                        Habitacion correcta
+                                    </div>
+                                    <div id="validationServer03Feedback" class="invalid-feedback">
+                                        La habitacion no coincide con el Huésped
+                                    </div>
                                 </div>
                             </div>
 
@@ -186,7 +103,7 @@
                                         <option value="1">Tarjeta</option>
                                         <option value="2">Efectivo</option>
                                         <option value="3">Cargo a la habitación</option>
-                                      </select>
+                                    </select>
                                 </div>
 
                             </div>
@@ -202,8 +119,8 @@
 
             <div class=" mt-4 text-end">
 
-                <h2>$100.00 MXN</h2>
-                <button type="button" class="btn btn-success">Pagar</button>
+                <h2 id="total">$0.00 MXN</h2>
+                <button type="button" class="btn btn-success" onclick="pagar() ">Confirmar pedido</button>
             </div>
 
         </div>
@@ -221,5 +138,8 @@
         2024 CLICK PIZZA BY BECO HOTEL BOUTIQUE
     </p>
 </footer>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="./js/carrito.js"></script>
 
 </html>
