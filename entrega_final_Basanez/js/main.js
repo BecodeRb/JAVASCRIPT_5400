@@ -192,7 +192,7 @@ const componenteBotonCategoria = (data) => {
 const componenteTarjetaProducto = (data, cantidad) => {
   return ` <div class="col-4">
         <div class="card  mb-2">
-          <img src="./img/productos/pizza_margarita_clasica-01.jpg" class="card-img-top" alt="...">
+          <img src="${data.imagen}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">${data.producto}</h5>
             <p class="card-text">${data.categoria.nombre}</p>

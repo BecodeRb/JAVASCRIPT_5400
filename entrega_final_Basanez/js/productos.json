@@ -12,7 +12,7 @@
     {
         "id": 2,
         "producto": "Margarita Pesto",
-        "imagen": "./img/productos/pizza_margarita_clasica-01.jpg",
+        "imagen": "./img/productos/pizza_margarita_pesto-01.jpg",
         "categoria": {
             "id": 1,
             "nombre": "Pizza Margarita"
@@ -22,7 +22,7 @@
     {
         "id": 3,
         "producto": "Margarita New York",
-        "imagen": "./img/productos/pizza_margarita_clasica-01.jpg",
+        "imagen": "./img/productos/pizza_margarita_ny-01.jpg",
         "categoria": {
             "id": 1,
             "nombre": "Pizza Margarita"
@@ -32,7 +32,7 @@
     {
         "id": 4,
         "producto": "Peperoni Clásica",
-        "imagen": "./img/productos/pizza_margarita_clasica-01.jpg",
+        "imagen": "./img/productos/pizza_pepe-01.jpg",
         "categoria": {
             "id": 2,
             "nombre": "Pizza Pepperoni"
@@ -42,11 +42,93 @@
     {
         "id": 5,
         "producto": "Peperoni con anchoas",
-        "imagen": "./img/productos/pizza_margarita_clasica-01.jpg",
+        "imagen": "./img/productos/pizza_pepe_anchoas-01.jpg",
         "categoria": {
             "id": 2,
             "nombre": "Pizza Pepperoni"
         },
         "precio": 190
+    },
+
+    {
+        "id": 6,
+        "producto": "Cuatro Quesos Clásica",
+        "imagen": "./img/productos/pizza_4_quesos-01.jpg",
+        "categoria": {
+            "id": 3,
+            "nombre": "Pizza Cuatro Quesos"
+        },
+        "precio": 200
+    },
+
+    {
+        "id": 7,
+        "producto": "Cuatro Quesos Blue Cheese",
+        "imagen": "./img/productos/pizza_4_quesos_blue-01.jpg",
+        "categoria": {
+            "id": 3,
+            "nombre": "Pizza Cuatro Quesos"
+        },
+        "precio": 220
+    },
+
+    {
+        "id": 8,
+        "producto": "Jamon Clásica",
+        "imagen": "./img/productos/pizza_jamon-01.jpg",
+        "categoria": {
+            "id": 4,
+            "nombre": "Pizza Jamon"
+        },
+        "precio": 210
+    },
+
+    {
+        "id": 9,
+        "producto": "Agua horchata",
+        "imagen": "./img/productos/agua_horchata-01.jpg",
+        "categoria": {
+            "id": 5,
+            "nombre": "Bebida"
+        },
+        "precio": 80
+    },
+
+    {
+        "id": 10,
+        "producto": "Agua natural",
+        "imagen": "./img/productos/agua_natural-01.jpg",
+        "categoria": {
+            "id": 5,
+            "nombre": "Bebida"
+        },
+        "precio": 30
+    },
+
+    {
+        "id": 11,
+        "producto": "Coca Cola",
+        "imagen": "./img/productos/coca_cola-01.jpg",
+        "categoria": {
+            "id": 5,
+            "nombre": "Bebida"
+        },
+        "precio": 90
+    },
+
+    {
+        "id": 12,
+        "producto": "Cerveza",
+        "imagen": "./img/productos/cerveza-01.jpg",
+        "categoria": {
+            "id": 5,
+            "nombre": "Bebida"
+        },
+        "precio": 110
     }
+
+
+
+
 ]
+

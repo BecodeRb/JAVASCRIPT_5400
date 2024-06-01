@@ -236,7 +236,7 @@ const componenteProducto = (producto) => {
 
             <div class="p-2 ">
                 <p class="p-0 m-0">Titulo</p>
-                <strong>Margarita clasica</strong>
+                <strong>${producto.producto}</strong>
             </div>
 
 
