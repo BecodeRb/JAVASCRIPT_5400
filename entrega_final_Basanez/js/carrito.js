@@ -87,15 +87,37 @@ const pagar = () => {
   let apellido = document.getElementById("apellido");
   let habitacion = document.getElementById("habitacion");
   const carrito = obtenerCarrito();
-
   if (carrito.length) {
     const apellidoValido = validarElemento(apellido, apellido_correcto);
     const habitacionValida = validarElemento(habitacion, habitacion_correcta);
 
+
     if (apellidoValido && habitacionValida && carrito.length > 0) {
-      eliminarProductoDelCarrito();
-      alertaAgregandoProducto("+", "Compra cargada a la Habitacion");
-      resetearFormulario();
+
+      Swal.fire({
+        title: "¿Desea confirma el pedido?",
+        text: "Al confirmar, su pedido se comienza a realizar sin poder realizar cambios o devoluciones",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Confirmar pedido"
+      }).then((result) => {
+        if (result.isConfirmed) {
+
+          eliminarProductoDelCarrito();
+          resetearFormulario();
+
+
+          Swal.fire({
+            title: "Pedido realizado",
+            text: `Gracias,  ${apellido_correcto} de la habitación ${habitacion_correcta} , en un momento estaremos con uds.`,
+            icon: "success"
+          });
+        }
+      });
+
+
     }
   } else {
     alertaAgregandoProducto("-", "El carrito está vacío");
@@ -143,6 +165,7 @@ const vaciarCarrito = () => {
 };
 
 const obtenerPizzas = () => {
+
   // Llama a esta función para actualizar el total del carrito en la interfaz de usuario
 
   fetch("js/productos.json")
